@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>OTT Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Duwon Kim <br> Portfolio</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li ><a href="index.html">Projects</a></li>
+							<li><a href="">About Me</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Netflix&nbsp; vs &nbsp;Disney+</h1>
+									<a href="https://github.com/Peter-Duwon-Kim/DuwonKim.github.io/blob/main/code/stream.sql" class="button large">sql file</a>
+									<a href="https://github.com/Peter-Duwon-Kim/DuwonKim.github.io/blob/main/code/disneyPrice.ipynb" class="button large">python file1</a>
+									<a href="https://github.com/Peter-Duwon-Kim/DuwonKim.github.io/blob/main/code/disneyTitles.ipynb" class="button large">python file2</a>
+								</header>
+								<div class="image main"><img src="images/image01.jpg" alt="" /></div>
+								<h2>개요</h2>
+                                <p>어느새부턴가 넷플릭스 같은 OTT 서비스가 미디어 시장에 큰 지분을 차지하게 되었습니다. 유료 서비스지만 너도나도 누구나 인터넷만 있다면 휴대폰이든 TV든 여러 하드웨어에서 미디어를 시청할 수 있습니다. OTT 서비스가 많이 상용화되면서 새로운 OTT 서비스들이 생겼습니다. 하지만, 그중에서 제일 규모가 크고 많이 사용되고 있는 제품은 넷플릭스입니다. 그리고 최근에 디즈니 플러스라는 OTT 서비스계의 신흥강자가 한국에도 서비스를 시작하게 되었습니다. 넷플릭스와 디즈니는 컨텐츠 차이도 있고 가격 차이도 있습니다. 물론 세계적으로도 구독 가격이 제각각입니다. 그래서 본 프로젝트의 목표는 넷플릭스와 디즈니 플러스를 여러 나라들을 통해 비교해 보는 것입니다.</p>
+								<h2>데이터</h2>
+                                <p>넷플릭스 관련 데이터는 Kaggle에서 가져오고 디즈니 플러스 관련 데이터는 두개의 사이트에서 크롤링 해왔습니다.</p>
+                                <div style="width: 33%; float: left; padding: 5px;">
+                                    <a href="https://www.kaggle.com/prasertk/netflix-subscription-price-in-different-countries" class="image main"><img src="images/stream/netflix.JPG" alt=""/></a>
+                                </div>
+                                <div style="width: 33%; float: left; padding: 5px;">
+                                    <a href="https://dejaview.news/disney-plus-library-sizes-globally/" class="image main"><img src="images/stream/disneySize.JPG" alt=""/></a>
+                                </div>
+                                <div style="width: 33%; float: left; padding: 5px;">
+                                    <a href="https://frugalanswers.com/how-much-is-disney-plus-subscription-around-the-world/" class="image main"><img src="images/stream/disneyPrice.JPG" alt=""/></a>
+                                </div>
+                                <div style="clear:both;"></div>
+                                <p>넷플릭스 데이터는 필요 없는 데이터를 정리했습니다. 디즈니 플러스 데이터는 두개의 테이블을 조인시켰습니다. </p>
+								<p>***넷플릭스와 디즈니 플러스는 둘다 제일 기본 요금제를 비교하고 둘다 서비스를 제공받지 못하는 나라의 데이터는 배제했습니다.</p>
+								<h2>분석</h2>
+								<div style="width: 50%; float: left; padding: 5px;">
+                                    <a href="https://public.tableau.com/app/profile/peter.kim2736/viz/Netflix_16454289767350/Sheet2" class="image main"><img src="images/stream/netflix.png" alt=""/></a>
+                                </div>
+								<div style="width: 50%; float: left; padding: 5px;">
+                                    <a href="https://public.tableau.com/app/profile/peter.kim2736/viz/DisneyPlus_16454287507500/Sheet1" class="image main"><img src="images/stream/disneyPlus.png" alt=""/></a>
+                                </div>
+								<p></p>
+								<div style="width: 50%; float: left; padding: 5px;">
+                                    <a href="https://public.tableau.com/app/profile/peter.kim2736/viz/NetflixMap_16454298852800/Sheet3" class="image main"><img src="images/stream/netflixMap.png" alt=""/></a>
+                                </div>
+								<div style="width: 50%; float: left; padding: 5px;">
+                                    <a href="https://public.tableau.com/app/profile/peter.kim2736/viz/DisneyPlusMap/Sheet4" class="image main"><img src="images/stream/disneyMap.png" alt=""/></a>
+                                </div>
+								<p>지도로 보았을 때 두 서비스 공통적으로 유럽쪽의 컨텐츠당 가격이 비교적 비싼걸 볼 수 있습니다.</p>
+								<div style="width: 90%; margin: auto; ">
+                                    <a href="https://public.tableau.com/app/profile/peter.kim2736/viz/Price_16454331753190/Sheet2" class="image main"><img src="images/stream/price.png" alt=""/></a>
+                                </div>
+								<p>몇몇 나라들을 제외하고는 넷플릭스의 가격이 더 비싼 것을 볼 수 있습니다. </p>
+								<div style="width: 90%; margin: auto; ">
+                                    <a href="https://public.tableau.com/app/profile/peter.kim2736/viz/Titles_16454332994950/Sheet3" class="image main"><img src="images/stream/titles.png" alt=""/></a>
+                                </div>
+								<p>아직 디즈니 플러스가 서비스를 시작한지 오래되지 않아서 컨텐츠 수는 넷플릭스가 압승입니다.</p>
+								<div style="width: 90%; margin: auto; ">
+                                    <a href="https://public.tableau.com/app/profile/peter.kim2736/viz/PriceperTitle/Sheet1" class="image main"><img src="images/stream/ppt.png" alt=""/></a>
+                                </div>
+								<p>결과적으로 디즈니의 컨텐츠당 가격은 넷플릭스에 비해 훨씬 비싼 것을 확연하게 볼 수 있습니다. 하지만, 앞으로 더더욱 디즈니 플러스가 컨텐츠를 늘리게 되면 결과는 달라질 수도 있다고 생각합니다. 가성비를 따진다면 당연히 넷플릭스를 선택하겠지만 각각 제공하는 컨텐츠가 다른 부분도 있고 겹치는 컨텐츠가 없을수록 순수 켄텐츠당 가격은 무의미해질 거라고 생각합니다.</p>
+                            </section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
