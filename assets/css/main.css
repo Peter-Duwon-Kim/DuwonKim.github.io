@@ -2668,17 +2668,17 @@ input, select, textarea {
 	}
 
 		a.image img {
-			-moz-transition: -moz-transform 0.2s ease-out;
-			-webkit-transition: -webkit-transform 0.2s ease-out;
-			-ms-transition: -ms-transform 0.2s ease-out;
-			transition: transform 0.2s ease-out;
+			-moz-transition: -moz-transform 0.1s ease-out;
+			-webkit-transition: -webkit-transform 0.1s ease-out;
+			-ms-transition: -ms-transform 0.1s ease-out;
+			transition: transform 0.1s ease-out;
 		}
 
 		a.image:hover img {
-			-moz-transform: scale(1.05);
-			-webkit-transform: scale(1.05);
-			-ms-transform: scale(1.05);
-			transform: scale(1.05);
+			-moz-transform: scale(1.02);
+			-webkit-transform: scale(1.02);
+			-ms-transform: scale(1.02);
+			transform: scale(1.02);
 		}
 
 /* Actions */
